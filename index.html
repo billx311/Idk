@@ -3,14 +3,16 @@
   <body>
     <p1>Countdown</p1>
     <script>
+      
       function updateCountdown(){
-      const mun_day = new Date("2026-10-13T00:00:00+05:00");
+      const mun_day = new Date("2026-11-13T00:00:00+05:00");
       const now_day = new Date();
       const dif = mun_day-now_day;
       const days = Math.floor(dif/(1000*60*60*24));
       const hours = Math.floor(dif/(1000*60*60)%24);
       const min = Math.floor(dif/(1000*60)%60);
       const sec = Math.floor(dif/(1000)%60);
+      setInterval(updateCountdown, 1000)
       
     </script>
   </body>
