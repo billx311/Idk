@@ -7,6 +7,10 @@
       const mun_day = new Date("2026-10-06T00:00:00+05:00");
       const now_day = new Date();
       const dif = mun_day-now_day;
+      const days = Math.floor(dif/(1000*60*60*24));
+      const hours = Math.floor(dif/(1000*60*60)%24);
+      const min = Math.floor(dif/(1000*60)%60);
+      const sec = Math.floor(dif/(1000)%60);
       
     </script>
   </body>
